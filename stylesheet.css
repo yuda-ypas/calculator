@@ -1,0 +1,60 @@
+.container{
+  background-color: grey;
+  width: 220px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 5px;
+  padding-bottom:5px;
+  margin: 20px;
+}
+p {
+  color: white;
+  font-size: 15px;
+}
+span{
+  font-size: 23;
+  color: yellow;
+}
+.layar {
+  margin: 5px;
+  padding: 10px 0;
+  width: 200px;
+  border: 3px solid black;
+}
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 5px 0px;
+  text-align: center;
+  
+}
+li {
+  color: white;
+  height: 50px;
+  line-height: 50px;
+  width: 42px;
+  margin: 0 5px;
+}
+.li1 {
+  background-color: #ffc562;
+}
+.li2 {
+  background-color: #a0c3f7;
+}
+.li3 {
+  background-color: #ff8db3;
+}
+.li4 {
+  background-color: #88e7ce;
+  color: black;
+}
+.titik{
+  background-color: brown;
+}
+.sama-dengan {
+  background-color: black;
+}
+/* tentukan property display milik .flex-list */
+.flex-list{
+  display: flex;
+}

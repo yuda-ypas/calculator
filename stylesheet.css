@@ -1,15 +1,20 @@
 .container{
   background-color: grey;
-  width: 220px;
+  /*width: 220px;*/
+  width: 17%;
   padding-top: 10px;
   padding-left: 10px;
   padding-right: 5px;
   padding-bottom:5px;
-  margin: 20px;
+  /*margin: 20px;*/
+  margin-left: 50%;
+  
 }
 p {
   color: white;
   font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 0;
 }
 span{
   font-size: 23;
@@ -18,8 +23,11 @@ span{
 .layar {
   margin: 5px;
   padding: 10px 0;
-  width: 200px;
+  width: 195px;
   border: 3px solid black;
+  text-align: right;
+  font-size: 15px;
+  color: black;
 }
 ul {
   list-style: none;
@@ -29,11 +37,16 @@ ul {
   
 }
 li {
-  color: white;
+  color: black;
   height: 50px;
   line-height: 50px;
   width: 42px;
   margin: 0 5px;
+  display: inline-block;
+  font-weight: bold;
+}
+li:hover{
+  cursor: pointer;
 }
 .li1 {
   background-color: #ffc562;
@@ -49,10 +62,10 @@ li {
   color: black;
 }
 .titik{
-  background-color: brown;
+  background-color: yellow;
 }
 .sama-dengan {
-  background-color: black;
+  background-color: white;
 }
 /* tentukan property display milik .flex-list */
 .flex-list{

@@ -1,74 +1,52 @@
-.container{
-  background-color: grey;
-  /*width: 220px;*/
-  width: 17%;
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-right: 5px;
-  padding-bottom:5px;
-  /*margin: 20px;*/
-  margin-left: 50%;
-  
-}
-p {
-  color: white;
-  font-size: 15px;
-  margin-top: 10px;
-  margin-bottom: 0;
-}
-span{
-  font-size: 23;
-  color: yellow;
-}
-.layar {
-  margin: 5px;
-  padding: 10px 0;
-  /*width: 195px;*/
-  width: 80%;
-  border: 3px solid black;
-  text-align: right;
-  font-size: 15px;
-  color: black;
-}
-ul {
-  list-style: none;
-  margin: 0px;
-  padding: 5px 0px;
+.calculator{
   text-align: center;
-  
+  margin: 0 auto;
+  padding-top: 200px;
+  width: 400px;
 }
-li {
-  color: black;
-  height: 50px;
-  line-height: 50px;
-  width: 42px;
-  margin: 0 5px;
-  display: inline-block;
-  font-weight: bold;
+
+.calculator-screen{
+  width: 100%;
+  height: 100px;
+  background-color: #252525;
+  color: #fff;
+  text-align: right;
+  font-size: 36px;
+  border none;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
-li:hover{
-  cursor: pointer;
+
+.calculator-keys{
+  width: 100%;
 }
-.li1 {
-  background-color: #ffc562;
-}
-.li2 {
-  background-color: #a0c3f7;
-}
-.li3 {
-  background-color: #ff8db3;
-}
-.li4 {
-  background-color: #88e7ce;
-  color: black;
-}
-.titik{
-  background-color: yellow;
-}
-.sama-dengan {
-  background-color: white;
-}
-/* tentukan property display milik .flex-list */
-.flex-list{
+
+.row{
   display: flex;
+}
+
+button{
+  height: 80px;
+  background-color: grey;
+  border: 1px solid black;
+  font-size: 32px;
+  color: #fff;
+  width: 25%;
+  outline: none;
+}
+
+.all-clean, .zero-btn{
+  width: 50%;
+}
+
+.operator, .equal-sign{
+  background-color: orange;
+}
+
+button:hover{
+  background-color: darkgray;
+}
+
+.operator:hover, .equal-sign:hover{
+  background-color:darkorange;
 }

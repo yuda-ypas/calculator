@@ -48,13 +48,13 @@ const calculate = () =>{
             result = parseFloat(prevNumber) + parseFloat(currentNumber)
             break
         case "-":
-            result = prevNumber - currentNumber
+            result = parseFloat(prevNumber) - parseFloat(currentNumber)
             break
         case "*" :
-            result = prevNumber * currentNumber
+            result = parseFloat(prevNumber) * parseFloat(currentNumber)
             break
         case "/" :
-            result = prevNumber / currentNumber
+            result = parseFloat(prevNumber) / parseFloat(currentNumber)
             break
         default :
             break
@@ -91,5 +91,40 @@ const decimal = document.querySelector('.decimal')
 
 decimal.addEventListener('click', (event) => {
     inputDecimal(event.target.value)
+    updateScreen(currentNumber)
+})
+
+
+const persen =() =>{
+        let result = ''
+        switch(calculationOperator){
+            case "+" :
+                result = parseFloat(prevNumber) + parseFloat(prevNumber)*parseFloat(currentNumber)/100
+                break
+            case "-" :
+                result = (prevNumber) - (prevNumber)*(currentNumber)/100
+                break
+            case "*" :
+                result = (prevNumber)*(currentNumber)/100
+                break 
+            case "/" :
+                result = (prevNumber)*100/(currentNumber)
+                break  
+            default :
+            break    
+        }
+              
+        currentNumber = result
+        calculationOperator = ''
+}
+
+
+
+
+
+const persenBtn = document.querySelector('.percentage')
+
+persenBtn.addEventListener('click', () => {
+    persen()
     updateScreen(currentNumber)
 })
